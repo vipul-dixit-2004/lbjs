@@ -1,0 +1,2 @@
+# lbjs
+Learning Basic JavaScript
