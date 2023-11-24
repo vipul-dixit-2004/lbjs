@@ -7,7 +7,7 @@ function List(props){
     return (
         <ul>
             {props.data.map((dataItem)=>{
-                return <ListItem index={dataItem} animal={dataItem}/>
+                return <ListItem index={dataItem}  animal={dataItem}/>
             })}
         </ul>
     )
