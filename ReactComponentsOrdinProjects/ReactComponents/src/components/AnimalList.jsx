@@ -1,6 +1,13 @@
+// nonConditionalRendering
+// function ListItem(props){
+//     console.log(props.index)
+//     return <li id={props.dataItem}>{props.animal}</li>
+// }
+
+//  conditional return
+
 function ListItem(props){
-    console.log(props.index)
-    return <li id={props.dataItem}>{props.animal}</li>
+ return props.animal.startsWith("L") && <li key={props.dataItem}>{props.animal}</li>
 }
 
 function List(props){
@@ -13,8 +20,10 @@ function List(props){
     )
 }
 
+
+
 function AnimalList(){
-    const animals = ['Lion','Tiger','Bear','Dog','Cat'];
+    const animals = ['Lion','Tiger','Bear','Dog','Cat','Lalala','LadyLion'];
     return(
         <>
         <List data={animals} />
