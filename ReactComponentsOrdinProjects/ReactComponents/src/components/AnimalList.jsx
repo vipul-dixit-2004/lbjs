@@ -1,12 +1,13 @@
 function ListItem(props){
-    return <li>{props.animal}</li>
+    console.log(props.index)
+    return <li id={props.dataItem}>{props.animal}</li>
 }
 
 function List(props){
     return (
         <ul>
             {props.data.map((dataItem)=>{
-                return <ListItem animal={dataItem}/>
+                return <ListItem index={dataItem} animal={dataItem}/>
             })}
         </ul>
     )
